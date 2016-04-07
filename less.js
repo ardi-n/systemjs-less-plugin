@@ -18,8 +18,8 @@ if (typeof window !== 'undefined') {
     return new Promise(function (resolve, reject) {
       var request = new XMLHttpRequest();
       request.open('GET', url, true);
-console.log("URL", url);
-      request.onload = function () {console.log("responseText", request.responseText);
+
+      request.onload = function () {
         if (request.responseText){//request.status >= 200 && request.status < 400) {
           // Success!
           var responseData = request.responseText;
